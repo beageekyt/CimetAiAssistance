@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/types.ts","./src/useconsole.ts","./src/vite-env.d.ts","./src/components/callpanel.tsx","./src/components/convertedleads.tsx","./src/components/leadqueue.tsx","./src/components/metricsbar.tsx","./src/components/sidepanel.tsx"],"version":"5.9.3"}

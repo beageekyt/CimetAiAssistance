@@ -1,0 +1,203 @@
+{
+  "journey_name": "New Electricity Connection Application",
+  "sections": [
+    {
+      "id": "consent",
+      "title": "Consent & Disclosure",
+      "intro_script": "Hi {{first_name}}, this is Nova calling on behalf of CIMIT about the new electricity connection application you started. This call is recorded for quality and training purposes. Is it okay if I continue?",
+      "fields": [
+        {
+          "id": "consent_recording",
+          "label": "Recording consent",
+          "type": "yes_no",
+          "required": true,
+          "script": "Just to confirm, is it okay for me to continue and record this call?",
+          "reprompt": "Sorry, I just need a quick yes or no — is it okay for me to continue?",
+          "on_no": "decline"
+        }
+      ]
+    },
+    {
+      "id": "customer_name",
+      "title": "Customer Name",
+      "intro_script": "Great, thank you. Let's pick up your connection application where you left off.",
+      "fields": [
+        {
+          "id": "customer_name",
+          "label": "Customer name",
+          "type": "text",
+          "required": true,
+          "script": "Can you confirm your full name for the connection application?",
+          "reprompt": "Sorry, could you repeat your full name, first and last?"
+        }
+      ]
+    },
+    {
+      "id": "connection_provider",
+      "title": "Connection Provider",
+      "intro_script": "",
+      "fields": [
+        {
+          "id": "connection_provider",
+          "label": "Connection provider",
+          "type": "choice",
+          "choices": ["Origin Energy", "EnergyAustralia", "AGL Energy", "Alinta Energy"],
+          "required": true,
+          "confirm_if_prefilled": true,
+          "script": "Which electricity provider is this connection with — Origin Energy, EnergyAustralia, AGL Energy, Alinta Energy, or another provider?",
+          "reprompt": "Sorry, is your provider Origin Energy, EnergyAustralia, AGL Energy, Alinta Energy, or something else?",
+          "confirm_script": "I have your provider down as {{value}} — would you like to keep that, or change it?"
+        }
+      ]
+    },
+    {
+      "id": "customer_gmail",
+      "title": "Email",
+      "intro_script": "",
+      "fields": [
+        {
+          "id": "customer_gmail",
+          "label": "Gmail address",
+          "type": "email",
+          "required": true,
+          "script": "What's the best Gmail address to send your connection updates to?",
+          "reprompt": "Sorry, could you spell out that Gmail address for me?"
+        }
+      ]
+    },
+    {
+      "id": "connection_address",
+      "title": "Connection Address",
+      "intro_script": "",
+      "fields": [
+        {
+          "id": "connection_address",
+          "label": "Connection address",
+          "type": "address",
+          "required": true,
+          "script": "What's the address where the new connection should be installed?",
+          "reprompt": "Could you say that address again, including the area or landmark?"
+        }
+      ]
+    },
+    {
+      "id": "connection_type",
+      "title": "Connection Type",
+      "intro_script": "",
+      "fields": [
+        {
+          "id": "connection_type",
+          "label": "Connection type",
+          "type": "choice",
+          "choices": ["residential", "commercial", "industrial"],
+          "required": true,
+          "script": "Is this connection for a residential, commercial, or industrial property?",
+          "reprompt": "Sorry, is it residential, commercial, or industrial?"
+        }
+      ]
+    },
+    {
+      "id": "property_details",
+      "title": "Property Details",
+      "intro_script": "",
+      "fields": [
+        {
+          "id": "property_details",
+          "label": "Property details",
+          "type": "text",
+          "required": true,
+          "script": "Can you tell me a bit about the property — for example house or flat, floor number, or a nearby landmark?",
+          "reprompt": "Sorry, could you describe the property a little more — house or flat, floor, or a nearby landmark?"
+        }
+      ]
+    },
+    {
+      "id": "move_in_connection_date",
+      "title": "Connection Date",
+      "intro_script": "",
+      "fields": [
+        {
+          "id": "move_in_connection_date",
+          "label": "Move-in / connection date",
+          "type": "date",
+          "required": true,
+          "script": "When would you like the connection to be active from — your move-in or connection date?",
+          "reprompt": "Sorry, could you give me a rough date for when you'd like the connection active?"
+        }
+      ]
+    },
+    {
+      "id": "electricity_usage_requirements",
+      "title": "Usage Requirements",
+      "intro_script": "",
+      "fields": [
+        {
+          "id": "electricity_usage_requirements",
+          "label": "Electricity usage requirements",
+          "type": "text",
+          "required": true,
+          "script": "Roughly what's your expected electricity usage — for example the appliances you'll run or your expected load?",
+          "reprompt": "Sorry, could you describe your expected electricity usage or main appliances?"
+        }
+      ]
+    },
+    {
+      "id": "identification_verification",
+      "title": "Identity Verification",
+      "intro_script": "",
+      "fields": [
+        {
+          "id": "identification_verification",
+          "label": "Identification verification",
+          "type": "text",
+          "required": true,
+          "script": "For identity verification, can you tell me which ID document you'll use, like Aadhaar or a passport, and its number?",
+          "reprompt": "Sorry, could you repeat the ID document type and number for verification?"
+        }
+      ]
+    },
+    {
+      "id": "contact_preferences",
+      "title": "Contact Preferences",
+      "intro_script": "Almost done — just how we should reach you.",
+      "fields": [
+        {
+          "id": "contact_preferences",
+          "label": "Preferred contact time",
+          "type": "choice",
+          "choices": ["morning", "afternoon", "evening"],
+          "required": true,
+          "script": "And if we ever need to follow up, is morning, afternoon or evening best?",
+          "reprompt": "No problem — morning, afternoon, or evening?"
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "title": "Review & Submit",
+      "intro_script": "Let me read that back to you before I submit it.",
+      "fields": [
+        {
+          "id": "consent_declaration",
+          "label": "Consent declaration",
+          "type": "yes_no",
+          "required": true,
+          "script": "So to confirm, you'd like me to go ahead and submit this new connection application with the details you've given me — do you consent, and shall I go ahead?",
+          "reprompt": "Just a yes or no — do you consent to submit this application?",
+          "on_no": "decline"
+        }
+      ]
+    }
+  ],
+  "scripts": {
+    "greeting_no_answer": "Hi, this is Ava calling about your new electricity connection application, I'll try again another time. Goodbye.",
+    "escalation": "I want to make sure this is handled properly, so I'm going to connect you with one of our team members now. Please hold for just a moment.",
+    "handoff_opening_line": "Hi, this is {{human_agent_name}}, I've got {{first_name}}'s connection application details in front of me from Ava — no need to repeat anything.",
+    "decline": "No problem at all, thank you for your time — I'll make a note and we won't call again about this. Have a great day.",
+    "close": "Thank you {{first_name}}, your new connection application has been submitted. Your reference number is {{reference}}. Your provider will process the request and you'll receive a confirmation email shortly. Have a great day!",
+    "card_data_redirect": "For your security, I'm not able to take card or payment details over the phone. I'll send you a secure link to complete payment details safely.",
+    "no_advice": "I'm not able to give personal advice on which connection option is best for you, but I can make sure a specialist follows up to help with that.",
+    "life_support_sensitive": "Thank you for letting me know — that's really important information, I'm going to connect you with a specialist straight away to make sure it's handled correctly."
+  }
+}
+

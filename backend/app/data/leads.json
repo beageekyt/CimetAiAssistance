@@ -1,0 +1,105 @@
+[
+  {
+    "id": "L-1001",
+    "first_name": "Priya",
+    "last_name": "Nair",
+    "phone": "+918394098383",
+    "dropped_section": "customer_gmail",
+    "connectionForm": {
+      "customer_name": "Priya Nair",
+      "connection_provider": "Origin Energy",
+      "customer_gmail": null,
+      "connection_address": null,
+      "connection_type": null,
+      "property_details": null,
+      "move_in_connection_date": null,
+      "electricity_usage_requirements": null,
+      "identification_verification": null,
+      "contact_preferences": null,
+      "consent_declaration": null
+    },
+    "notes": "Use your own phone number here for the live demo."
+  },
+  {
+    "id": "L-1002",
+    "first_name": "Daniel",
+    "last_name": "Wu",
+    "phone": "+61491570157",
+    "dropped_section": "connection_type",
+    "connectionForm": {
+      "customer_name": "Daniel Wu",
+      "connection_provider": "Origin Energy",
+      "customer_gmail": "daniel.wu@example.com",
+      "connection_address": "14 Sigra Road, Varanasi UP 221010",
+      "connection_type": null,
+      "property_details": null,
+      "move_in_connection_date": null,
+      "electricity_usage_requirements": null,
+      "identification_verification": null,
+      "contact_preferences": null,
+      "consent_declaration": null
+    }
+  },
+  {
+    "id": "L-1003",
+    "first_name": "Mei",
+    "last_name": "Chen",
+    "phone": "+61491570158",
+    "dropped_section": "move_in_connection_date",
+    "connectionForm": {
+      "customer_name": "Mei Chen",
+      "connection_provider": "Origin Energy",
+      "customer_gmail": "mei.chen@example.com",
+      "connection_address": "22 Civil Lines, Kanpur UP 208001",
+      "connection_type": "residential",
+      "property_details": "2BHK flat, 3rd floor, near City Mall",
+      "move_in_connection_date": null,
+      "electricity_usage_requirements": null,
+      "identification_verification": null,
+      "contact_preferences": null,
+      "consent_declaration": null
+    }
+  },
+  {
+    "id": "L-1004",
+    "first_name": "Robert",
+    "last_name": "Jones",
+    "phone": "+61491570159",
+    "dropped_section": "connection_provider",
+    "connectionForm": {
+      "customer_name": "Robert Jones",
+      "connection_provider": "Other",
+      "customer_gmail": null,
+      "connection_address": null,
+      "connection_type": null,
+      "property_details": null,
+      "move_in_connection_date": null,
+      "electricity_usage_requirements": null,
+      "identification_verification": null,
+      "contact_preferences": null,
+      "consent_declaration": null
+    },
+    "notes": "On the DNC list - used to demo the gate blocking a call before dialling."
+  },
+  {
+    "id": "L-1005",
+    "first_name": "Amara",
+    "last_name": "Singh",
+    "phone": "+61491570160",
+    "dropped_section": "identification_verification",
+    "connectionForm": {
+      "customer_name": "Amara Singh",
+      "connection_provider": "Origin Energy",
+      "customer_gmail": "amara.singh@example.com",
+      "connection_address": "9 Gomti Nagar, Lucknow UP 226010",
+      "connection_type": "residential",
+      "property_details": "Independent house, ground floor",
+      "move_in_connection_date": "2026-10-01",
+      "electricity_usage_requirements": "AC, fridge, washing machine - approx 3kW load",
+      "identification_verification": null,
+      "contact_preferences": null,
+      "consent_declaration": null
+    }
+  }
+]
+

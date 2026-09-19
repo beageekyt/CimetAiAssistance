@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+backend/app/data/calls.json
+backend/app/data/processed_connections.json
+node_modules/
+dist/
+.vite/
+*.log
+.DS_Store
